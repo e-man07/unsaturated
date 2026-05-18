@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F4F1EC;
+  --bg-2: #EFEBE2;
+  --surface: #FBF9F4;
+  --surface-2: #ECE7DC;
+  --ink: #1A1A1A;
+  --ink-2: #3A352D;
+  --ink-3: #6B6457;
+  --ink-4: #9A9183;
+  --bone: #C8C2B5;
+  --bone-2: #DCD6C8;
+  --bone-3: #E8E3D6;
+  --signal: #1F8A5B;
+  --signal-2: #176C46;
+  --signal-tint: #DEEAE0;
+  --signal-glow: rgba(31, 138, 91, 0.12);
+  --amber: #B96A1F;
+  --rust: #A8401E;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--ink); color: var(--bg); }
+
+/* Caret used in the typing hero */
+.caret {
+  display: inline-block;
+  width: 0.55ch;
+  height: 1em;
+  background: var(--ink);
+  vertical-align: -2px;
+  animation: blink 1s steps(2, start) infinite;
+  margin-left: 2px;
+}
+@keyframes blink { to { visibility: hidden; } }
+
+/* Marker (yellow-style highlight) */
+.marker {
+  background: linear-gradient(transparent 62%, var(--signal-tint) 62%);
+  padding: 0 2px;
+}
+
+/* Service card hover */
+.svc-link-underline { padding-bottom: 2px; border-bottom: 1px solid var(--ink); }
