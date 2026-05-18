@@ -26,7 +26,7 @@ const config: Config = {
       fontFamily: {
         serif: ["var(--font-serif)", "Times New Roman", "serif"],
         sans: [
-          "var(--font-sans)",
+          "var(--font-geist-sans)",
           "-apple-system",
           "Helvetica Neue",
           "Helvetica",

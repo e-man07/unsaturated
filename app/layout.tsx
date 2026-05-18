@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Geist, JetBrains_Mono } from "next/font/google";
+import { Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 const serif = Instrument_Serif({
@@ -7,13 +8,6 @@ const serif = Instrument_Serif({
   weight: ["400"],
   style: ["normal", "italic"],
   variable: "--font-serif",
-  display: "swap",
-});
-
-const sans = Geist({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-sans",
   display: "swap",
 });
 
@@ -32,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${serif.variable} ${GeistSans.variable} ${mono.variable}`}>
       <body data-screen-label="01 Home" className="font-sans bg-bg text-ink">
         {children}
       </body>

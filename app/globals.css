@@ -27,7 +27,7 @@
 html, body {
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--font-sans), -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.55;
   font-weight: 400;
